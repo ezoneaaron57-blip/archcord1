@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg0: #08090c;
+  --bg1: #0d0e12;
+  --bg2: #12131a;
+  --bg3: #1a1b23;
+  --bg4: #21222c;
+  --border: rgba(255,255,255,0.07);
+  --border2: rgba(255,255,255,0.12);
+  --text: rgba(255,255,255,0.88);
+  --dim: rgba(255,255,255,0.45);
+  --dim2: rgba(255,255,255,0.25);
+  --accent: #5af78e;
+  --blue: #57c7ff;
+  --pink: #ff6ac1;
+  --yellow: #f3f99d;
+  --purple: #9f4fff;
+  --orange: #ff9248;
+  --red: #ff5f57;
+  --font: 'JetBrains Mono', 'Cascadia Code', monospace;
+  --radius: 6px;
+  --blur: blur(20px) saturate(1.6);
+}
+
+html, body, #root { height: 100%; overflow: hidden; }
+body { font-family: var(--font); background: var(--bg0); color: var(--text); font-size: 13px; }
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.2); }
+
+button { font-family: var(--font); cursor: pointer; border: none; background: none; color: inherit; }
+input, textarea { font-family: var(--font); color: var(--text); background: none; border: none; outline: none; }
+textarea { resize: none; }
+a { color: var(--blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
